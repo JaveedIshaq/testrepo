@@ -1,0 +1,14 @@
+private String getStyle() throws JSONException {
+    JSONObject o = new JSONObject();
+    o.put("backgroundColor", "#E3EDF7");
+    o.put("textHighlightColor", "#25D366");
+    o.put("textColor", "#384047");
+    o.put("buttonColor", "#535AB8");
+    o.put("buttonTextColor", "#ffffff");
+    o.put("iconColor", "#535AB8");
+    o.put("actionBarColor", "#075E54");
+    o.put("actionBarTextColor", "#384047");
+    o.put("secondaryButtonColor", "#8687eb");
+    o.put("schemeLogos", "M,V,A");
+    return "&style=" + URLEncoder.encode(o.toString());
+}
